@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" integrity="sha512-paVHVRRhdoOu1nOXKnqDC1Vka0nh7FAmU3nsM4n2FKxOQTeF6crMdMfkVvEsuaOXZ6oEAVL5+wLbQcule/Xdag==" crossorigin="anonymous" /> -->
+        <style>
+            	.animate-spin-custom{
+                    animation: spin 15s linear infinite;
+                    transition-duration: 1s;
+                }
+                @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+                }
+                .animate-pulse-custom{
+                    animation: pulse-custom 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse-custom {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+                }
+                .animate-pulse-0{
+                    animation: pulse-custom-0 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse-custom-0 {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: .3;
+                }
+                }
+                .animate-pulse-1{
+                    animation: pulse-custom-1 .5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse-custom-1 {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: .5;
+                }
+                }
+                .animate-pulse-2{
+                    animation: pulse-custom-2 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse-custom-2 {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: .5;
+                }
+                }
+                .animate-pulse-3{
+                    animation: pulse-custom-3 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                @keyframes pulse-custom-3 {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: .5;
+                }
+                }
+                .btn{
+                    background-color: white;
+                    color: #1A1A1A;
+                    font-family: Futura Bk Bt;
+                    outline: none;
+                    border: none;
+                    border-radius: 3px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 14pt;
+                    margin-right: 30px;
+                    vertical-align: middle;
+                    align-content: center;
+                    transition-duration: .2s;
+                    text-decoration: none;
+                    display:inline-block;
+
+                }
+                .btn:hover{
+                    cursor: pointer;
+                    transition-duration: .2s;
+                    transform: scale(1.03);
+                }
+                .nav{
+                    background-color: #FFFF00;
+                    padding: 25px;
+                    position: fixed;
+                    font-family: Geometr415 Blk BT;
+                    font-size: 28pt;
+                    height: 30px;
+                    color: #4D4D4D;
+                    right: -100px;
+                    top:150px;
+                    z-index: 110;
+                    animation: nav-ani 1s infinite;
+                }
+                @keyframes nav-ani {
+                    0%,100% {
+                        transform: rotate(85deg);
+                    }
+                    50% {
+                        transform: rotate(90deg);
+                    }
+                }
+                .green-line{
+                    z-index: 105;
+                }
+                .animation-1{
+                    animation: translate-left 1.5s infinite;
+                }
+                @keyframes translate-left {
+                0%, 100% {
+                    transform: translate(10px,0);
+                }
+                50% {
+                    transform: translate(-10px,0);
+                }
+                }
+                .animation-2{
+                    animation: translate-right 2s infinite;
+                }
+                @keyframes translate-right {
+                0%, 100% {
+                    transform: translate(-10px,0);
+                }
+                50% {
+                    transform: translate(10px,0);
+                }
+                }
+                .animation-3{
+                    animation: translate-left-1 2.5s infinite;
+                }
+                @keyframes translate-left-1 {
+                0%, 100% {
+                    transform: translate(10px,0);
+                }
+                50% {
+                    transform: translate(-10px,0);
+                }
+                }
+                .content{
+                   animation: welcome 3s;
+                }
+                @keyframes welcome {
+                    0% {
+                        transform: scale(0);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+        </style>
+        <title>Web Portofolio</title>
+    </head>
+    <body style="background-color: #161616;">
+        <!-- Background Styler Start -->
+        <img src="portofolio-moon.png" alt="" class="animate-spin-custom" style="position: fixed; right: -16%;top: 330px;z-index: 99;width: 41.666667%;">
+        <img src="moon-background.png" alt="" class="moon-background" style="position: fixed; right: -380px;top: 260px;z-index: 98;width: 950px;">
+        <img src="moon-background-1.png" alt="" class="moon-background" style="position: fixed; right: -450px;top: 195px;z-index: 97;width: 1100px;">
+        <img src="moon-background-2.png" alt="" class="moon-background" style="position: fixed; right: -520px;top: 130px;z-index: 96;width: 1250px;">
+        <img src="moon-background-3.png" alt="" class="moon-background" style="position: fixed; right: -590px;top: 65px;z-index: 95;width: 1400px;">
+        <img src="scorpio.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="animate-pulse-custom">
+        <img src="scorpio-stars.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="animate-pulse-0">
+        <img src="stars-1.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="animate-pulse-1">
+        <img src="stars-2.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="animate-pulse-2">
+        <img src="stars-3.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="animate-pulse-3">
+        <img src="green-line.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="green-line animation-1">
+        <img src="green-line-1.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="green-line animation-2">
+        <img src="green-line-2.png" alt="" style="width: 100vw;height: 100vh;position: fixed;" class="green-line animation-3">
+        <!-- Background Styler End -->
+        <div class="nav">THIS IS ME</div>
+        <div style="margin-left: 8vw;margin-top: 16vh;position: absolute;z-index: 111;" class="content">
+            <h2 style="color: white;font-family: Geometr415 Blk BT;font-size: 48pt;margin-bottom: 0;">HELLO THERE, I AM</h2>
+            <h1 style="color: #FFFF00; font-family: Geometr415 Blk BT;font-size: 78pt;margin-top: 0;margin-bottom: 0;">MUHAMMAD<br>FARHAN<br>MADANI</h1>
+            <h3 style="color: white;font-family: Roboto Black;font-size: 36pt;margin-top: 0;margin-bottom: 30px;">DevOps Engineer &#9775; Web Developer</h3>
+            <a class="btn" href="mailto://muhammadfarhanmadani248@gmail.com" target="_BlANK"><img src="google-logo-9808.png" style="height: 25px;margin-right: 10px;vertical-align: middle;"/></img>muhammadfarhanmadani248@gmail.com</a><a href="https://instagram.com/madanitea" class="btn" target="_BLANK"><img src="instagram-logo-1.png" style="height: 25px;margin-right: 10px;vertical-align: middle;"/></img>madanitea</a><a href="https://github.com/madanitea" class="btn" target="_BLANK"><img src="github-logo.png" style="height: 25px;margin-right: 10px;vertical-align: middle;"/></img>madanitea</a>
+        </div>
+    </body>
+</html
